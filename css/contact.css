@@ -1,0 +1,168 @@
+body {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.hero .hero-text {
+    position: absolute;
+    z-index: 1;
+    margin-top: 5%;
+    margin-left: 36%;
+    text-shadow: 3px 1px black;
+    text-align: center;
+    font-size: 10vw;
+    font-family: 'Bebas Neue', monospace;
+    color: white;
+}
+
+.contact-bg h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.line div {
+    margin: 0 0.2rem;
+}
+
+.line div:nth-child(1),
+.line div:nth-child(3) {
+    height: 3px;
+    width: 70px;
+    background: #b9ceac;
+    border-radius: 5px;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+}
+
+.line div:nth-child(2) {
+    width: 10px;
+    height: 10px;
+    background: #b9ceac;
+    border-radius: 50%;
+}
+
+.text {
+    font-weight: 300;
+    opacity: 0.9;
+    font-size: large;
+    font-family: 'Bebas Neue', monospace;
+}
+
+.contact-bg .text {
+    margin: 1.6rem 0;
+    font-family: 'Bebas Neue', monospace;
+}
+
+.contact-body {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.contact-info-grid {
+    margin: 2rem 0;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.contact-info-grid span {
+    display: block;
+}
+
+.contact-info-grid div {
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+
+.contact-info-grid span .fas {
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: #b9ceac;
+}
+
+.contact-info-grid div span:nth-child(2) {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.contact-info-grid .text {
+    padding-top: 0.4rem;
+    font-size: medium;
+}
+
+form label {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    font: 'Bebas Neue', cursive;
+}
+
+input[type=text],
+input[type=email],
+input[type=subject],
+select,
+textarea {
+    width: 70%;
+    margin: 0 auto;
+    padding: 17px;
+    border: 1px solid #ccc;
+    border-radius: 17px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    display: block;
+    font-family: 'Bebas Neue', monospace;
+}
+
+input[type=submit] {
+    margin-left: 15%;
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 17px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    font-family: 'Bebas Neue', monospace;
+}
+
+input[type=submit]:hover {
+    background-color: #D7B997;
+    color: black;
+}
+
+.container {
+    border-radius: 17px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font: 'Bebas Neue', cursive;
+}
+
+@media screen and (min-width: 800px) {
+    .contact-bg .text {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        font: 'Bebas Neue', cursive;
+    }
+    .contact-info-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .contact-bg .text {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-info-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

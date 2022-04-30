@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logout { margin-left: 23%; 
+    background-color: black; 
+    color: white; 
+    padding: 12px 20px;
+     border: none; 
+     border-radius: 17px; 
+     cursor: pointer; 
+     margin-top: 30px; 
+     width: 30%; 
+     margin-bottom: 30px; 
+     font-size: 17px; 
+     font-family: 'Bebas Neue', monospace; }
+     
+.logout:hover{
+          background-color: #D7B997;
+           color: rgb(15, 15, 15); }
+.green-box-content {
+    display: flex;
+}
+
+.title-profile {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: 'Bebas Neue', monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.first-content {
+    width: 100%;
+    height: 360px;
+    background-color: #b9ceac; 
+    font-family: 'Bebas Neue', monospace;
+}
+
+#profile-picture.first-content img {
+    margin-top: -30px;
+    margin-left: 200px;
+}
+
+.text-first-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.text-first-content p {
+    margin: 10px 0 10px 90px;
+    font-size: 25px;
+}
+
+.logout a {
+    color: black;
+}
+
+.info-green {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+#matchstick.first-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#matchstick.first-content img {
+    width: 250px;
+    transform: rotate(-10deg);
+    margin: 40px 150px 40px 0;
+}
+
+.points-first-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+.points-first-content p {
+    text-align: center;
+}
+
+/* how to claim the reward */
+.steps-claim-reward {
+    font-family: 'Bebas Neue', monospace;
+    margin-bottom: 50px;
+}
+
+.title-claim-reward {
+    font-family: 'Bebas Neue', monospace;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.two-steps {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.steps img {
+    width: 180px;
+}
+
+.steps {
+    font-size: 25px;
+    width: 400px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+#text.steps {
+    background-color: #b9ceac9d;
+}
+
+.claimed-rewards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.box-under-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 250px;
+    height: 100px;
+    background-color: #b9ceac;
+    font-family: 'Bebas Neue', monospace;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .steps-claim-reward {
+        margin-bottom: 0;
+    }
+
+    .title-profile {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
+    .green-box-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #profile-picture.first-content {
+        display: flex;
+        justify-content: center;
+    }
+
+    #profile-picture.first-content img {
+        margin: 20px 0 0 0;
+    }
+
+    #info-user.first-content {
+        height: 200px;
+    }
+
+    .text-first-content {
+        display: flex;
+        margin-left: 45px;
+    }
+
+    .text-first-content p {
+        margin: 10px 0;
+        font-size: 25px;
+    }
+
+    #matchstick.first-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 200px;
+    }
+    
+    #matchstick.first-content img {
+        width: 250px;
+        margin:0 0 40px 0;
+    }
+
+    .title-claim-reward {
+        margin: 30px 0 10px 0;
+    }
+
+    .two-steps {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .steps {
+        width: 100vw;
+    }
+
+    #text.steps {
+        font-size: 20px;
+        height: 80px;
+        background-color: transparent;
+        width: 90vw;
+    }
+
+    #image.steps {
+        display: none;
+    }
+
+    .claimed-rewards {
+        display: flex;
+        flex-direction: column;
+        margin-top: -10px;
+    }
+
+    .box-under-box {
+        margin-top: -20px;
+        width: 200px;
+        height: 100px;
+        background-color: #b9ceac;
+        text-align: center;
+        flex-direction: column;
+    }
+
+}

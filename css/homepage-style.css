@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* beginning of homepage */
+
+div#two {
+    padding-bottom: 44px;
+}
+
+.title-steps {
+    margin-top: 50px;
+    font-family: 'Bebas Neue', monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+.steps {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-family: 'Bebas Neue', monospace;
+    font-size: 25px;
+}
+
+#one.step,
+#two.step,
+#three.step {
+    width: 25%;
+}
+
+.step-mobile {
+    display: none;
+}
+
+.arrow img {
+    width: 50px;
+    transform: rotate(90deg);
+}
+
+.all-boxes {
+    display: flex;
+    justify-content: center;
+}
+
+.logo#box img {
+    width: 166px;
+}
+
+.green-box {
+    display: flex;
+    background-color: #b9ceacb6;
+    height: 330px;
+    margin-top: -165px;
+    margin-bottom: -165px;
+}
+
+.box1 {
+    height: 330px;
+    width: 540px;
+    background-color: #D7B997;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', monospace;
+    font-size: 30px;
+    margin: 10px 10px;
+}
+
+#top1.box1,
+#top2.box2 {
+    margin-top: 120px;
+}
+
+#bottom1.box1,
+#bottom2.box2 {
+    margin-bottom: 70px;
+}
+
+.box1 a {
+    color: floralwhite;
+    text-decoration: none;
+}
+
+.box1 a:hover {
+    color: white;
+}
+
+.box2 {
+    height: 330px;
+    width: 540px;
+    margin: 10px 10px;
+}
+
+
+/* mobile version */
+
+@media (max-width: 768px) {
+    /* steps how loyalty program works */
+    .title-steps {
+        font-size: 25px;
+    }
+    .steps {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .step-mobile {
+        display: flex;
+    }
+    #one.step,
+    #two.step,
+    #three.step {
+        display: none;
+    }
+    .arrow img {
+        width: 50px;
+        margin: 20px 0;
+        transform: rotate(180deg);
+    }
+    /* boxes */
+    .all-boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin: 50px; */
+    }
+    .green-box {
+        display: none;
+    }
+    .box1 {
+        height: 165px;
+        width: 270px;
+        font-size: 20px;
+    }
+    .box2 {
+        display: none;
+        height: 165px;
+        width: 270px;
+    }
+}

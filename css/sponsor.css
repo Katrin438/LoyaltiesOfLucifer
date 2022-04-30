@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*menu css */
+
+.smaller_name:hover {
+    color: #b9ceacc2;
+}
+
+.smaller_name {
+    justify-content: center;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 2em;
+    font-family: Bebas Neue;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(19, 2, 2);
+    display: flex;
+}
+
+img.cbeer:hover {
+    transform: scale(1.01);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+img.fbeer:hover {
+    transform: none;
+}
+
+.logo#location {
+    width: 33%;
+}
+
+a.store_locator_text {
+    color: black;
+    font-family: 'Bebas Neue', monospace;
+    margin-right: 50%;
+    font-size: 140%;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    height: 130px;
+    background-color: #b9ceac;
+    display: flex;
+    justify-content: center;
+}
+
+.left {
+    float: left;
+    display: flex;
+    justify-content: left;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.logo#box {
+    width: 33%;
+}
+
+.logo#box img {
+    width: 166px;
+}
+
+.logo#box a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+}
+
+img.confirmedphoto {
+    padding-left: 25%;
+}
+
+h4.pointmain {
+    padding-left: 44%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+li.left {
+    float: left;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+.hero .page_name {
+    position: absolute;
+    z-index: 1;
+    margin-top: 5%;
+    margin-left: 35%;
+    text-shadow: 3px 1px black;
+    text-align: center;
+    font-size: 10vw;
+    font-family: Bebas Neue;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+
+/* end of header + navbar */
+
+.hero img {
+    position: relative;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+    /* hide picture behind menu */
+}
+
+.img_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+.text_in_s {
+    width: 30%;
+    font-family: Bebas Neue;
+    font-size: 30px;
+    padding-left: 5%;
+}
+
+.mid_green_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    margin-left: 25%;
+    width: 50%;
+    background-color: #b9ceac6b;
+}
+
+.mid_green_box p {
+    font-family: Bebas Neue;
+    font-size: 25px;
+}
+
+.two_photos {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+img.cbeer {
+    width: 30%;
+}
+
+img.fbeer {
+    width: 20%;
+}
+
+img.logo_sponsor {
+    width: 10%;
+}
+
+.green_box_again {
+    position: relative;
+    background-color: #b9ceac;
+    opacity: 70%;
+    width: 251px;
+    padding-top: 2%;
+    padding-left: 1%;
+    justify-content: center;
+    margin-top: 12%;
+    height: 181px;
+    font-size: 20px;
+    font-family: Bebas Neue;
+    margin-left: -251px;
+}
+
+@media (max-width: 768px) {
+    /* end rewards section */
+    /* footer */
+    p.text_in_s {
+        font-size: 14px!important;
+        width: 40%;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color: #b9ceac;
+        transition: 0.3s ease;
+    }
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    li a {
+        font-size: 24px;
+    }
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    img.logo_sponsor {
+        width: 18%;
+    }
+    /* end of header + nav bar*/
+    /* rewards section */
+    button.button {
+        margin-top: 1px;
+        padding: 5px 49px;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: #b9ceac;
+        right: 0;
+        z-index: 2;
+        left: 0;
+        text-align: left;
+        padding: 16px 0;
+    }
+    img.fbeer {
+        width: 28%;
+    }
+    img.cbeer {
+        width: 47%;
+    }
+    .mid_green_box p {
+        font-size: 14px;
+    }
+    .mid_green_box {
+        font-size: 14px;
+        text-align: center;
+        margin-left: 11%;
+        width: 76%;
+    }
+    img.logo_sponsor {
+        width: 20%;
+    }
+    .green_box_again {
+        position: relative;
+        background-color: #b9ceac;
+        opacity: 70%;
+        width: 115px;
+        padding-top: 4%;
+        padding-left: 1%;
+        justify-content: center;
+        margin-top: 12%;
+        height: 111px;
+        font-size: 14px;
+        font-family: Bebas Neue;
+        margin-left: -115px;
+    }
+}

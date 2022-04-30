@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    font-family: 'Bebas Neue', monospace;
+    border-radius: 0px;
+    border-style: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#popUpBox {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    background: #b9ceac;
+    box-shadow: 0 0 5px black;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+.text-popUpBox {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.success {
+    font-size: 20px;
+}
+
+.text-popUpBox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.text-popUpBox img {
+    width: 50px;
+}
+
+.buttons-popup {
+    display: flex;
+    justify-content: center;
+}
+
+#closeModal {
+    display: flex;
+    flex-direction: row;
+}
+
+#closeModal-close button {
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    font-family: 'Bebas Neue', monospace;
+    border-style: none;
+    padding: 5px 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #popUpBox {
+        width: 300px;
+        height: 300px;
+    }
+    .text-popUpBox {
+        height: 300px;
+        display: flex;
+    }
+}
+
+#app,
+#app-2,
+#app-3 {
+    display: grid;
+    place-content: center;
+    margin-top: 10%;
+}
+
+
+/* css for timer */
+
+@media screen and (max-width: 768px) {
+    #app,
+    #app-2,
+    #app-3 {
+        margin-top: -3% !important;
+    }
+}
+
+#app,
+#app-2,
+#app-3 {
+    display: grid;
+    place-content: center;
+    margin-top: none;
+}
+
+.base-timer {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.base-timer__svg {
+    transform: scaleX(-1);
+}
+
+.base-timer__circle {
+    fill: none;
+    stroke: none;
+}
+
+.base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+}
+
+.base-timer__path-remaining {
+    stroke-width: 7px;
+    stroke-linecap: round;
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+    color: rgb(65, 184, 131);
+}
+
+.base-timer__path-remaining.orange {
+    color: orange;
+}
+
+.base-timer__path-remaining.red {
+    color: red;
+}
+
+.base-timer__label {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}

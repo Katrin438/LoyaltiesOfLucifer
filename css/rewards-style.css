@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo#box img {
+    width: 166px;
+}
+
+.hero img {
+    position: relative;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+    /* hide picture behind menu */
+}
+
+
+/* rewards section begin*/
+
+.rewards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.one-reward {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    margin: 0 20px;
+}
+
+.box img {
+    width: 250px;
+}
+
+.small-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 250px;
+    height: 100px;
+    background-color: #b9ceac;
+    font-family: 'Bebas Neue', monospace;
+    font-size: 20px;
+}
+
+.big-small-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 830px;
+    height: 100px;
+    background-color: #b9ceac;
+    font-family: 'Bebas Neue', monospace;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.big-box {
+    width: 830px;
+    height: 250px;
+    margin: 0 20px;
+}
+
+.big-box img {
+    width: 830px;
+}
+
+#desktop-img {
+    display: block;
+}
+
+#mobile-img {
+    display: none;
+}
+
+button.open-btn {
+    background-color: black;
+    color: white;
+    font-family: 'Bebas Neue', monospace;
+    border-radius: 0px;
+    border-style: none;
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.box-text-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.box-text-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-text-right img {
+    width: 40px;
+}
+
+.box-text-right p {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+/* end of rewards*/
+
+
+/* mobile version */
+
+@media (max-width: 768px) {
+    /* rewards section */
+    .rewards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .box {
+        width: 200px;
+        height: 200px;
+        margin: 20px 20px;
+    }
+    .box img {
+        width: 200px;
+    }
+    .small-box {
+        margin-top: -20px;
+        width: 200px;
+        height: 100px;
+        background-color: #b9ceac;
+        text-align: center;
+    }
+    .big-small-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: -20px;
+        margin-bottom: 40px;
+        width: 200px;
+        height: 100px;
+        background-color: #b9ceac;
+    }
+    .big-box {
+        width: 200px;
+        height: 200px;
+        /* border: black 1px solid; */
+        margin: 20px 20px;
+    }
+    #desktop-img {
+        display: none;
+    }
+    #mobile-img {
+        display: block;
+        width: 200px;
+    }
+    .box-text-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-text-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box-text-right img {
+        width: 25px;
+    }
+    /* end rewards section */
+}
